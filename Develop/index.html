@@ -7,6 +7,8 @@
     <title> Random Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+
   <body>
     <div class="wrapper">
       <header>
@@ -26,35 +28,36 @@
           ></textarea>
         </div>
 
-        <div class="card-footer">
-          <button type="submit" id="generate" class="btn">Generate Password</button>
+            <div class="card-footer">
+              <button type="submit" id="generate" class="btn">Generate Password</button>
 
-          <label>
-              <span> Password Length</span>
-              <input type="number" id="passwordLength" value=""/>
-          </label>
+              <label class="options">
+                  <span> Password Length:</span>
+                  <input type="number" id="passwordLength" value=""/>
+              </label>
 
-          <label>
-            <span> Include Uppercase Letters</span>
-            <input type="checkbox" id="upperCaseCheckbox"/>
-          </label>
+              <label class="options">
+                <span> Include Uppercase Letters</span>
+                <input type="checkbox" id="upperCheck"/>
+              </label>
 
-          <label>
-            <span> Include Lowercase Letters</span>
-            <input type="checkbox" id="lowerCaseCheckbox"/>
-          </label>
+              <label class="options">
+                <span> Include Lowercase Letters</span>
+                <input type="checkbox" id="lowerCheck"/>
+              </label>
 
-          <label>
-            <span> Include Special Characters</span>
-            <input type="checkbox" id="specialCheckbox"/>
-          </label>
+              <label class="options">
+                <span> Include Numbers</span>
+                <input type="checkbox" id="numbersCheck"/>
+              </label>
 
+              <label class="options">
+                <span> Include Special Characters</span>
+                <input type="checkbox" id="specialCheck"/>
+              </label>
 
-
-
-
-        </div>
-
+            
+            </div>
       </div>
     </div>
     <script src="script.js"></script>

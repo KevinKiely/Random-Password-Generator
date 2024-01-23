@@ -1,40 +1,58 @@
 
 // Get references to the #generate element
 
-/*
 var generateBtn = document.querySelector("#generate");
-var passLength = document.querySelector('#length');
-var passUpper = document.querySelector('#Upper');
-var passLower = document.querySelector('#Lower');
-var passNumbers = document.querySelector('#Numbers');
-var passSpecial = document.querySelector('#Special');
-*/
+generateBtn.addEventListener("click", generatePassword);
+var finalPassword = document.querySelector("#password");
+
+
+var passLength = document.querySelector("#passwordLength");
+var passUpper = document.querySelector("#upperCheck");
+var passLower = document.querySelector("#lowerCheck");
+var passNumbers = document.querySelector("#numbersCheck");
+var passSpecial = document.querySelector("#specialCheck");
+
+
+
 
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var upperCaseArray = upperCase.split("");
 var lowerCase = "abcdefghijklmnopqrstuvwyz";
-var lowerCaseArray = lowerCase.split("");
 var numbers = "0123456789";
-var numbersArray = numbers.split("");
 var special = "!@#$%^&*()_+=<>?/";
-var specialArray = special.split("");
 
 
-/* let length = passLength.value;  */
+function generatePassword () {
+  var password = "";
+  var length = passLength.value;
+  var chars = "";
 
+  chars += passUpper.checked ? upperCase : "";
+  chars += passLower.checked ? lowerCase : "";
+  chars += passNumbers.checked ? numbers : "";
+  chars += passSpecial.checked ? special : "";
 
+  for (let i = 0; i <=length; i++) {
+    let rand = Math.floor(Math.random() * chars.length);
+    password += chars.substring(rand,rand + 1);
+  }
+
+  finalPassword.value = password;
+
+}
+
+ 
+
+/*
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  
-
-
-  ar passwordText = document.querySelector("#password");
+   
+ var passwordText = document.querySelector("#password");
   passwordText.value = password;
 
 }
 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
+*/
