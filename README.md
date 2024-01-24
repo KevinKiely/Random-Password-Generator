@@ -9,7 +9,7 @@ for the password generator, which is a flaw that will be fixed at a later date. 
 
 
 <h2> Link to website</h2>
-<a href="https://kevinkiely.github.io/Random-Password-Generator/" Click here to go to the website>
+<p> <a href="https://kevinkiely.github.io/Random-Password-Generator/"> Click here to go to the website </a></p> 
   
 <h2> Contributions </h2>
 This project was done with the assistance of:
