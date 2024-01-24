@@ -1,7 +1,7 @@
 <h1> Random Password Generator </h1>
 <h2> Description</h2>
 <p>This random password generator was a practice exercise for a coding bootcamp I am currently attending. The goal was to create a custuomizable random password generator that can produce passwords based on several input criteria. There was starter code given to 
-me which needed to be modified. The generator input boxes in which you can toggle if passwords will contain uppercase letters, lowercase letters, numbers, special characters, and the length of the password itself. There is currently no minimum or maximum number of characters
+me which needed to be modified. The generator contains input boxes in which you can toggle if passwords will contain uppercase letters, lowercase letters, numbers, special characters, and the length of the password itself. There is currently no minimum or maximum number of characters
 for the password generator, which is a flaw that will be fixed at a later date. </p>
 
 
