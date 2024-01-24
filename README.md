@@ -12,7 +12,7 @@ for the password generator, which is a flaw that will be fixed at a later date. 
 <p> <a href="https://kevinkiely.github.io/Random-Password-Generator/"> Click here to go to the website </a></p> 
   
 <h2> Contributions </h2>
-This project was done with the assistance of:
-- Classmates input
-- https://forum.codewithmosh.com/t/creating-a-password-generator-using-javascript/18971
-- A youtube web development instructor: https://www.youtube.com/@TylerPotts
+<ul>This project was done with the assistance of:</ul>
+<li> Classmates input</li>
+<li> https://forum.codewithmosh.com/t/creating-a-password-generator-using-javascript/18971</li>
+<li> A youtube web development instructor: https://www.youtube.com/@TylerPotts </li>
